@@ -1,0 +1,8 @@
+spring:
+  resources:
+    static-locations: file:./templates/
+  thymeleaf:
+    cache: false
+    encoding: utf-8
+    suffix: .html
+    prefix: file:./templates/
