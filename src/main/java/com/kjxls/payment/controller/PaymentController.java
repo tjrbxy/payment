@@ -46,7 +46,7 @@ public class PaymentController {
         String apiV3Key = paymentProperties.getWeChatPay().getApiV3Key();
         // https://github.com/wechatpay-apiv3/wechatpay-apache-httpclient#%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E5%95%86%E6%88%B7%E7%A7%81%E9%92%A5;
         PrivateKey merchantPrivateKey = PemUtil.loadPrivateKey(
-                new FileInputStream("/Users/abel.tang/data/java/payment/apiclient_key.pem"));
+                new FileInputStream("/app/apiclient_key.pem"));
 
         //不需要传入微信支付证书了
         AutoUpdateCertificatesVerifier verifier = new AutoUpdateCertificatesVerifier(

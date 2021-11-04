@@ -15,7 +15,10 @@ import org.springframework.stereotype.Component;
 public class PaymentProperties {
 
     public static final String PREFIX = "spring.payment";
-
+    /**
+     * 当前服务域名
+     */
+    public String domain;
     /**
      * 微信商户配置
      */
