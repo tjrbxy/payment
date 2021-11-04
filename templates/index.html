@@ -12,6 +12,52 @@
     <script type="text/javascript" src="static/js/index.js" th:src="@{static/js/index.js}"></script>
 </head>
 <body>
-
+<header class="head">
+    <div>
+        <img src="static/images/logo.png" alt="">
+    </div>
+    <div class="title">
+        网上支付快捷通道
+    </div>
+</header>
+<form action="payment" method="post" class="payment" >
+    <main class="main">
+        <div class="tips">
+            <img src="static/images/aliPay.png" alt="">
+            支付资金受支付宝全程保护，请放心操作。
+        </div>
+        <div class="info">
+            <div class="info-item">
+                <div class="left">订单金额</div>
+                <div class="right"   >¥6500.00</div>
+            </div>
+            <div class="info-item bottom">
+                <div class="left">已付金额</div>
+                <div class="right pay"   >¥6500.00</div>
+            </div>
+        </div>
+        <div class=" info form">
+            <div class="info-item bottom">
+                <div class="left"> <span class="require">*</span> 支付金额</div>
+                <div class="right ">
+                    <input type="number" pattern="\d*" name="payPrice"  placeholder="请输入支付金额" class="input"  >
+                </div>
+            </div>
+            <div class="info-item bottom">
+                <div class="left">姓名</div>
+                <div class="right ">
+                    <input type="text" name="name" placeholder="请输入姓名" class="input">
+                </div>
+            </div>
+            <div class="info-item bottom">
+                <div class="left">手机号</div>
+                <div class="right ">
+                    <input type="number" pattern="[0-9]*" name="mobile"  placeholder="请输入手机号" class="input"   >
+                </div>
+            </div>
+        </div>
+        <button class="btn" type="submit" >开始支付</button>
+    </main>
+</form>
 </body>
 </html>

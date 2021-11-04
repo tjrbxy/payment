@@ -6,3 +6,9 @@ spring:
     encoding: utf-8
     suffix: .html
     prefix: file:./templates/
+  payment:
+    we-chat-pay:
+      api-v3-key: pJaB5Fp6AGnISgGKv8yj541M3mSmra0P
+      api-key: gO8VR2rjvlJoNzc3IeNNwSU4h6aReo72
+      merchant-id: 1610035082
+      merchant-serial-number: 2EF81A3FBE7F66BBBC555F5618EC8AE28BA7EE7A
