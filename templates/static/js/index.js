@@ -15,8 +15,9 @@
 
         if (!clientWidth) return;
         var fz;
-        var width = clientWidth;
-        fz = 16 * width / 375;
+        var width = clientWidth > 750 ? 750 : clientWidth;
+        console.log(width)
+        fz = 100 * width / 750;
         docEl.style.fontSize = fz + 'px';//这样每一份也是16px,即1rem=16px
     };
 
